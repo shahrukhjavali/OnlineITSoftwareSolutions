@@ -12,7 +12,7 @@ import TestimonieForm from './components/testimonies/add.testimonies';
 
 const App = () => (
   <>
-    <BrowserRouter>
+    <BrowserRouter basename = {process.env.React_APP_PUBLIC_URL}>
       <NavBar/>
       <Switch>
         <Route exact path='/' component = {Home}/>
