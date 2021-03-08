@@ -3,9 +3,7 @@ import { Container, Col, Image, Row } from 'react-bootstrap';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 import '../testimonies/testimonies.styles.css';
-import TestimonieForm from './add.testimonies';
 import user from '../testimonies/user.jpg';
-import { Link } from 'react-router-dom';
 import Ratings from '../ratings/ratings.component';
 
 class Testimonies extends React.Component{

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Container, Button } from 'react-bootstrap';
-
+import ThankYou from '../thank-you/thank-you.component';
 import './testimonies.styles.css';
 import appendData_Testimonies from './add-testimonies';
 
@@ -27,12 +27,19 @@ class TestimonieForm extends React.Component{
             Date:new Date().toLocaleDateString()
         })
         document.getElementById('form').reset();
+        document.getElementById('show').style.display = "block";
+        document.getElementById('formdiv').style.display = "none";
+    }
+
+    componentDidMount(){
+        document.getElementById('show').style.display = "none";
     }
 
     render(){
         return(
             <>
       <Container>
+      <div id="formdiv">
         <h1>Add Testimonies</h1>
         <Form id = "form" onSubmit = {this.handleSubmit}>
             <Form.Group>
@@ -45,12 +52,14 @@ class TestimonieForm extends React.Component{
             </Form.Group>
             <Form.Group>
                 <Form.Label>Testimonie</Form.Label>
-                <Form.Control as = "TextArea" name = "testimonie" placeholder = "Please enter Review" onChange = {this.handleChange} rows = {5}/>
+                <Form.Control as = "textarea" name = "testimonie" placeholder = "Please enter Review" onChange = {this.handleChange} rows = {5}/>
             </Form.Group>
             <Form.Group>
                 <Button className = "btn" type="submit">Submit</Button>
             </Form.Group>
         </Form>
+    </div>
+    <div id = "show"><ThankYou name = "Testimonies"/></div>
      </Container>  
     </>
     )

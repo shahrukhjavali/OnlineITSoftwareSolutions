@@ -18,10 +18,10 @@ const App = () => (
         <Route exact path='/' component = {Home}/>
         <Route path='/courses' component = {Course}/>
         <Route path='/aboutus' component = {AboutUs}/>
-        <Route path='/enquiry' component = {QuickEnquiry}/>
-        <Route path='/register' component = {Register}/>
+        <Route exact path='/enquiry' component = {QuickEnquiry}/>
+        <Route exact path='/register' component = {Register}/>
         <Route exact path='/testimonies' component = {Testimonies}/>
-        <Route path='/testimonies/add' component = {TestimonieForm}/>
+        <Route exact path='/testimonies/add' component = {TestimonieForm}/>
       </Switch>
     </BrowserRouter>
   </>
