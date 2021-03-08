@@ -9,6 +9,7 @@ class TestimonieForm extends React.Component{
         super()
         this.state = {
             name:"",
+            rating:"",
             testimonie:""
         }
     }
@@ -21,6 +22,7 @@ class TestimonieForm extends React.Component{
         e.preventDefault()
         appendData_Testimonies({
             Name:this.state.name[0],
+            Rating:this.state.rating[0],
             Testimonies:this.state.testimonie[0],
             Date:new Date().toLocaleDateString()
         })
@@ -38,13 +40,17 @@ class TestimonieForm extends React.Component{
                 <Form.Control type = "text" name = "name" placeholder = "First Name" onChange = {this.handleChange}/>           
             </Form.Group>
             <Form.Group>
+                <Form.Label>Rating</Form.Label>
+                <Form.Control type = "number" name = "rating" placeholder = "Rating out of 5" onChange = {this.handleChange}/>
+            </Form.Group>
+            <Form.Group>
                 <Form.Label>Testimonie</Form.Label>
-                <Form.Control type = "textarea" name = "testimonie" placeholder = "testimonie" onChange = {this.handleChange}/>
+                <Form.Control as = "TextArea" name = "testimonie" placeholder = "Please enter Review" onChange = {this.handleChange} rows = {5}/>
             </Form.Group>
             <Form.Group>
                 <Button className = "btn" type="submit">Submit</Button>
             </Form.Group>
-        </Form> 
+        </Form>
      </Container>  
     </>
     )

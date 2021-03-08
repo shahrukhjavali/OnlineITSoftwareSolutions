@@ -6,6 +6,7 @@ import '../testimonies/testimonies.styles.css';
 import TestimonieForm from './add.testimonies';
 import user from '../testimonies/user.jpg';
 import { Link } from 'react-router-dom';
+import Ratings from '../ratings/ratings.component';
 
 class Testimonies extends React.Component{
     constructor(){
@@ -61,7 +62,12 @@ class Testimonies extends React.Component{
                     <Row key = {row[1]} className = "rows">
                       <Col>
                         <Image className = "img" src={user}/>
-                          <span className = "name" >{row[3]}</span>
+                        <span className = "name" >{row[3]}</span>
+                          {
+                            [...Array(parseInt(row[5]))].map((start,i) =>{
+                              return <Ratings/>
+                            })
+                          }
                         <Col className = "col">
                           <p>{row[4]}</p>
                         </Col>
