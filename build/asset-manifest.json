@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/OnlineITSoftwareSolutions/static/css/main.144972cf.chunk.css",
-    "main.js": "/OnlineITSoftwareSolutions/static/js/main.546f452e.chunk.js",
-    "main.js.map": "/OnlineITSoftwareSolutions/static/js/main.546f452e.chunk.js.map",
+    "main.js": "/OnlineITSoftwareSolutions/static/js/main.3c62c0d2.chunk.js",
+    "main.js.map": "/OnlineITSoftwareSolutions/static/js/main.3c62c0d2.chunk.js.map",
     "runtime-main.js": "/OnlineITSoftwareSolutions/static/js/runtime-main.32af91bb.js",
     "runtime-main.js.map": "/OnlineITSoftwareSolutions/static/js/runtime-main.32af91bb.js.map",
-    "static/js/2.133242c5.chunk.js": "/OnlineITSoftwareSolutions/static/js/2.133242c5.chunk.js",
-    "static/js/2.133242c5.chunk.js.map": "/OnlineITSoftwareSolutions/static/js/2.133242c5.chunk.js.map",
+    "static/js/2.2b0fda78.chunk.js": "/OnlineITSoftwareSolutions/static/js/2.2b0fda78.chunk.js",
+    "static/js/2.2b0fda78.chunk.js.map": "/OnlineITSoftwareSolutions/static/js/2.2b0fda78.chunk.js.map",
     "index.html": "/OnlineITSoftwareSolutions/index.html",
     "static/css/main.144972cf.chunk.css.map": "/OnlineITSoftwareSolutions/static/css/main.144972cf.chunk.css.map",
-    "static/js/2.133242c5.chunk.js.LICENSE.txt": "/OnlineITSoftwareSolutions/static/js/2.133242c5.chunk.js.LICENSE.txt",
+    "static/js/2.2b0fda78.chunk.js.LICENSE.txt": "/OnlineITSoftwareSolutions/static/js/2.2b0fda78.chunk.js.LICENSE.txt",
     "static/media/Appium.dccb8e92.png": "/OnlineITSoftwareSolutions/static/media/Appium.dccb8e92.png",
     "static/media/ManualTesting.e0dbcbb5.png": "/OnlineITSoftwareSolutions/static/media/ManualTesting.e0dbcbb5.png",
     "static/media/cucumber.20b58e74.png": "/OnlineITSoftwareSolutions/static/media/cucumber.20b58e74.png",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.32af91bb.js",
-    "static/js/2.133242c5.chunk.js",
+    "static/js/2.2b0fda78.chunk.js",
     "static/css/main.144972cf.chunk.css",
-    "static/js/main.546f452e.chunk.js"
+    "static/js/main.3c62c0d2.chunk.js"
   ]
 }
