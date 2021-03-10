@@ -9,6 +9,8 @@ import Register from './components/register/register.component';
 import Home from './components/home/home.component';
 import Testimonies from './components/testimonies/testimonies.component';
 import TestimonieForm from './components/testimonies/add.testimonies';
+import Projects from './components/projects/projects.component';
+import Syllabus from './components/syllabus/syllabus.component';
 
 const App = () => (
   <>
@@ -22,6 +24,8 @@ const App = () => (
         <Route exact path='/register' component = {Register}/>
         <Route exact path='/testimonies' component = {Testimonies}/>
         <Route exact path='/testimonies/add' component = {TestimonieForm}/>
+        <Route exact path='/projects' component = {Projects}/>
+        <Route path='/syllabus' component = {Syllabus}/>
       </Switch>
     </BrowserRouter>
   </>

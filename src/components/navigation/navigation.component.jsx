@@ -30,7 +30,6 @@ const NavBar = () => {
               (
                 <li key = {index} className = {item.cname} >
                  <Link to = {item.path}>
-                  {item.icon}
                   <span>{item.title}</span>
                  </Link> 
                 </li>

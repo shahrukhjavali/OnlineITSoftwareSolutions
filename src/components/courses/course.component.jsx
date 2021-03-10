@@ -36,7 +36,7 @@ class Course extends React.Component{
                     {    
                         this.state.images.filter(img => img.id <= 3).map(img => 
                             (
-                                <Col>
+                                <Col key = {img.id}>
                                     <CourseContent image = {img}/> 
                                 </Col>
                             )
@@ -47,7 +47,7 @@ class Course extends React.Component{
                     {    
                         this.state.images.filter(img => img.id >= 4 && img.id <= 6).map(img => 
                             (
-                                <Col>
+                                <Col key = {img.id}>
                                     <CourseContent image = {img}/> 
                                 </Col>
                             )
@@ -58,7 +58,7 @@ class Course extends React.Component{
                     {    
                         this.state.images.filter(img => img.id >= 6 && img.id <= 8).map(img => 
                             (
-                                <Col>
+                                <Col key = {img.id}>
                                     <CourseContent image = {img}/> 
                                 </Col>
                             )
